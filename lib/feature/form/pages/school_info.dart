@@ -24,7 +24,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
   final TextEditingController _visionController = TextEditingController();
   final TextEditingController _missionController = TextEditingController();
 
-  final GlobalKey _formKeyPage2 = GlobalKey<FormState>();
+  final GlobalKey _schoolInfoFormKey = GlobalKey<FormState>();
 
   @override
   void dispose() {
@@ -46,7 +46,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
       child: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Form(
-          key: _formKeyPage2,
+          key: _schoolInfoFormKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:management_form/feature/form/pages/achievements.dart';
+import 'package:management_form/feature/form/pages/chairmain_principle_info.dart';
+import 'package:management_form/feature/form/pages/extracurricular_activities.dart';
+import 'package:management_form/feature/form/pages/facilities.dart';
 import 'package:management_form/feature/form/pages/school_info.dart';
 import 'package:management_form/feature/form/pages/personal_info.dart';
+import 'package:management_form/feature/form/pages/special_program.dart';
 import 'package:management_form/feature/form/widgets/custom_stepper.dart';
 import 'package:management_form/utils/colors.dart';
 import 'package:management_form/utils/utils.dart';
@@ -136,11 +141,11 @@ class _FormScreenState extends State<FormScreen> {
                 List<Widget> screen = [
                   const PersonalInfo(),
                   const SchoolInfo(),
-                  Center(child: Text('Page ${index + 1}')),
-                  Center(child: Text('Page ${index + 1}')),
-                  Center(child: Text('Page ${index + 1}')),
-                  Center(child: Text('Page ${index + 1}')),
-                  Center(child: Text('Page ${index + 1}')),
+                  const ChairmanPrincipleInfo(),
+                  const Facilities(),
+                  const ExtracurricularActivities(),
+                  const SpecialProgram(),
+                  const Achievements(),
                 ];
                 return screen[index];
               },

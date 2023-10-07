@@ -1,15 +1,13 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:management_form/feature/form/widgets/custom_text_form_field.dart';
-
 import 'package:management_form/utils/colors.dart';
 import 'package:management_form/utils/font.dart';
 import 'package:management_form/utils/utils.dart';
 
 class PersonalInfo extends StatefulWidget {
-  const PersonalInfo({super.key});
+  const PersonalInfo({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<PersonalInfo> createState() => _PersonalInfoState();
@@ -28,7 +26,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
   final TextEditingController _stateController = TextEditingController();
   final TextEditingController _cityController = TextEditingController();
   final TextEditingController _pincodeController = TextEditingController();
-  final GlobalKey _formKeyPage1 = GlobalKey<FormState>();
+  final GlobalKey _personalInfoFormKey = GlobalKey<FormState>();
 
   @override
   void dispose() {
@@ -56,7 +54,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
       child: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Form(
-          key: _formKeyPage1,
+          key: _personalInfoFormKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -85,7 +83,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 ),
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'Full name',
                 style: Font.formTextStyle,
               ),
@@ -98,7 +96,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 },
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'DOI*',
                 style: Font.formTextStyle,
               ),
@@ -113,7 +111,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 },
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'Phone no*',
                 style: Font.formTextStyle,
               ),
@@ -127,7 +125,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 },
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'Alt phone no',
                 style: Font.formTextStyle,
               ),
@@ -141,7 +139,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 },
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'Email id*',
                 style: Font.formTextStyle,
               ),
@@ -155,7 +153,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 },
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'Alt email id',
                 style: Font.formTextStyle,
               ),
@@ -169,7 +167,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 },
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'Fax number',
                 style: Font.formTextStyle,
               ),
@@ -182,7 +180,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                 },
               ),
               Utils().sizedBox,
-              Text(
+              const Text(
                 'Address*',
                 style: Font.formTextStyle,
               ),
@@ -201,7 +199,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Country*',
                           style: Font.formTextStyle,
                         ),
@@ -221,7 +219,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'State*',
                           style: Font.formTextStyle,
                         ),
@@ -245,7 +243,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'City*',
                           style: Font.formTextStyle,
                         ),
@@ -265,7 +263,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Pincode*',
                           style: Font.formTextStyle,
                         ),
@@ -290,7 +288,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                   // Use State Management for the stepper updation
                 },
                 child: Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   decoration: BoxDecoration(
                     color: AppColors.kPurple,
                     borderRadius: BorderRadius.circular(50.0),
