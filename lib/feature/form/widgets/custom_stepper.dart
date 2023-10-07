@@ -62,7 +62,6 @@ class CustomStepper extends StatelessWidget {
                 text,
                 textAlign: TextAlign.center,
                 softWrap: true,
-                // maxLines: 3,
                 overflow: TextOverflow.ellipsis,
                 style: index == currentIndex
                     ? const TextStyle(
