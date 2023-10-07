@@ -55,7 +55,7 @@ class _ExtracurricularActivitiesState extends State<ExtracurricularActivities> {
                       children: [
                         const Text(
                           'Extracurricular activities',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         IconButton(
                           onPressed: () {
@@ -112,7 +112,7 @@ class _ExtracurricularActivitiesState extends State<ExtracurricularActivities> {
               child: Center(
                 child: Text(
                   'Next',
-                  style: Font.formTextStyle.copyWith(
+                  style: Font.managementProfileHeadingTextStyle.copyWith(
                     color: AppColors.kWhite,
                   ),
                 ),

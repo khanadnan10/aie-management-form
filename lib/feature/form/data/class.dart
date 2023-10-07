@@ -1,0 +1,35 @@
+// Class static data for school info
+
+List<String> classFrom = [
+  'Nursery',
+  'LKG',
+  'UKG',
+  'I',
+  'II',
+  'III',
+  'IV',
+  'V',
+  'VI',
+  'VII',
+  'VIII',
+  'IX',
+  'X',
+  'XI',
+  'XII',
+];
+List<String> classTo = [
+  'LKG',
+  'UKG',
+  'I',
+  'II',
+  'III',
+  'IV',
+  'V',
+  'VI',
+  'VII',
+  'VIII',
+  'IX',
+  'X',
+  'XI',
+  'XII',
+];

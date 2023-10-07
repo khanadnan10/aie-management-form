@@ -75,7 +75,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                         Icon(Icons.add),
                         Text(
                           'Add Image',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                       ],
                     ),
@@ -85,7 +85,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'Full name',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -98,7 +98,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'DOI*',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -113,7 +113,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'Phone no*',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -127,7 +127,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'Alt phone no',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -141,7 +141,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'Email id*',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -155,7 +155,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'Alt email id',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -169,7 +169,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'Fax number',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -182,7 +182,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
               Utils().sizedBox,
               const Text(
                 'Address*',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -201,7 +201,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                       children: [
                         const Text(
                           'Country*',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Utils(height: 10).sizedBox,
                         CustomTextFormField(
@@ -221,7 +221,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                       children: [
                         const Text(
                           'State*',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Utils(height: 10).sizedBox,
                         CustomTextFormField(
@@ -245,7 +245,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                       children: [
                         const Text(
                           'City*',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Utils(height: 10).sizedBox,
                         CustomTextFormField(
@@ -265,7 +265,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                       children: [
                         const Text(
                           'Pincode*',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Utils(height: 10).sizedBox,
                         CustomTextFormField(
@@ -296,7 +296,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                   child: Center(
                     child: Text(
                       'Next',
-                      style: Font.formTextStyle.copyWith(
+                      style: Font.managementProfileHeadingTextStyle.copyWith(
                         color: AppColors.kWhite,
                       ),
                     ),

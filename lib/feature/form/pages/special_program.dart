@@ -8,8 +8,7 @@ class SpecialProgram extends StatefulWidget {
   const SpecialProgram({Key? key}) : super(key: key);
 
   @override
-  State<SpecialProgram> createState() =>
-      _SpecialProgramState();
+  State<SpecialProgram> createState() => _SpecialProgramState();
 }
 
 class _SpecialProgramState extends State<SpecialProgram> {
@@ -55,7 +54,7 @@ class _SpecialProgramState extends State<SpecialProgram> {
                       children: [
                         const Text(
                           'Special programs',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         IconButton(
                           onPressed: () {
@@ -112,7 +111,7 @@ class _SpecialProgramState extends State<SpecialProgram> {
               child: Center(
                 child: Text(
                   'Next',
-                  style: Font.formTextStyle.copyWith(
+                  style: Font.managementProfileHeadingTextStyle.copyWith(
                     color: AppColors.kWhite,
                   ),
                 ),

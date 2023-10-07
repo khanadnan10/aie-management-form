@@ -54,7 +54,7 @@ class _FacilitiesState extends State<Facilities> {
                       children: [
                         const Text(
                           'Facilities',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         IconButton(
                           onPressed: () {
@@ -111,7 +111,7 @@ class _FacilitiesState extends State<Facilities> {
               child: Center(
                 child: Text(
                   'Next',
-                  style: Font.formTextStyle.copyWith(
+                  style: Font.managementProfileHeadingTextStyle.copyWith(
                     color: AppColors.kWhite,
                   ),
                 ),

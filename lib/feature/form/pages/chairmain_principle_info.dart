@@ -46,7 +46,7 @@ class _ChairmanPrincipleInfoState extends State<ChairmanPrincipleInfo> {
                       children: [
                         const Text(
                           'Chairman',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Align(
                           alignment: Alignment.center,
@@ -65,7 +65,8 @@ class _ChairmanPrincipleInfoState extends State<ChairmanPrincipleInfo> {
                                   Icon(Icons.add),
                                   Text(
                                     'Add Image',
-                                    style: Font.formTextStyle,
+                                    style:
+                                        Font.managementProfileHeadingTextStyle,
                                   ),
                                 ],
                               ),
@@ -83,7 +84,7 @@ class _ChairmanPrincipleInfoState extends State<ChairmanPrincipleInfo> {
                         Utils().sizedBox,
                         const Text(
                           'Principle',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Utils().sizedBox,
                         Align(
@@ -103,7 +104,8 @@ class _ChairmanPrincipleInfoState extends State<ChairmanPrincipleInfo> {
                                   Icon(Icons.add),
                                   Text(
                                     'Add Image',
-                                    style: Font.formTextStyle,
+                                    style:
+                                        Font.managementProfileHeadingTextStyle,
                                   ),
                                 ],
                               ),
@@ -140,7 +142,7 @@ class _ChairmanPrincipleInfoState extends State<ChairmanPrincipleInfo> {
               child: Center(
                 child: Text(
                   'Next',
-                  style: Font.formTextStyle.copyWith(
+                  style: Font.managementProfileHeadingTextStyle.copyWith(
                     color: AppColors.kWhite,
                   ),
                 ),

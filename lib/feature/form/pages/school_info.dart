@@ -2,6 +2,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:management_form/feature/form/data/class.dart';
 import 'package:management_form/feature/form/widgets/custom_text_form_field.dart';
 
 import 'package:management_form/utils/colors.dart';
@@ -52,7 +53,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
             children: [
               Text(
                 'School Code*',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -71,13 +72,13 @@ class _SchoolInfoState extends State<SchoolInfo> {
                       children: [
                         Text(
                           'Class from*',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Utils(height: 10).sizedBox,
                         CustomTextFormField(
                           controller: _classFromController,
                           suffixIconType: SuffixIconType.dropDown,
-                          dropdownOptions: const ['V', 'VI', 'VII'],
+                          dropdownOptions: classFrom,
                           hintText: 'V',
                           validator: (value) {
                             //TODO: Class from* validator
@@ -93,13 +94,13 @@ class _SchoolInfoState extends State<SchoolInfo> {
                       children: [
                         Text(
                           'Class to*',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         Utils(height: 10).sizedBox,
                         CustomTextFormField(
                           controller: _classToController,
                           suffixIconType: SuffixIconType.dropDown,
-                          dropdownOptions: const ['X', 'XI', 'XII'],
+                          dropdownOptions: classTo,
                           hintText: 'XII',
                           validator: (value) {
                             //TODO: Class from* validator
@@ -113,7 +114,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
               Utils().sizedBox,
               Text(
                 'Motto',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -129,7 +130,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
               Utils().sizedBox,
               Text(
                 'About school*',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -145,7 +146,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
               Utils().sizedBox,
               Text(
                 'Vision',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -161,7 +162,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
               Utils().sizedBox,
               Text(
                 'Mission',
-                style: Font.formTextStyle,
+                style: Font.managementProfileHeadingTextStyle,
               ),
               Utils(height: 10).sizedBox,
               CustomTextFormField(
@@ -189,7 +190,7 @@ class _SchoolInfoState extends State<SchoolInfo> {
                   child: Center(
                     child: Text(
                       'Next',
-                      style: Font.formTextStyle.copyWith(
+                      style: Font.managementProfileHeadingTextStyle.copyWith(
                         color: AppColors.kWhite,
                       ),
                     ),

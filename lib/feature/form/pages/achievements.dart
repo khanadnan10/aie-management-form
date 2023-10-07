@@ -54,7 +54,7 @@ class _AchievementsState extends State<Achievements> {
                       children: [
                         const Text(
                           'Achievements',
-                          style: Font.formTextStyle,
+                          style: Font.managementProfileHeadingTextStyle,
                         ),
                         IconButton(
                           onPressed: () {
@@ -111,7 +111,7 @@ class _AchievementsState extends State<Achievements> {
               child: Center(
                 child: Text(
                   'Next',
-                  style: Font.formTextStyle.copyWith(
+                  style: Font.managementProfileHeadingTextStyle.copyWith(
                     color: AppColors.kWhite,
                   ),
                 ),
