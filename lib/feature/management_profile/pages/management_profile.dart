@@ -4,6 +4,7 @@ import 'package:management_form/feature/form/pages/extracurricular_activities.da
 import 'package:management_form/feature/management_profile/pages/achievement.dart';
 import 'package:management_form/feature/management_profile/pages/chairman_princinpal.dart';
 import 'package:management_form/feature/management_profile/pages/extracurricular_activity.dart';
+import 'package:management_form/feature/management_profile/pages/profile.dart';
 import 'package:management_form/feature/management_profile/pages/special_programs.dart';
 import 'package:management_form/feature/management_profile/pages/facility.dart';
 import 'package:management_form/feature/management_profile/pages/faculty.dart';
@@ -185,9 +186,7 @@ class _ManagementProfileState extends State<ManagementProfile> {
                     itemCount: 8,
                     itemBuilder: (context, index) {
                       List<Widget> screen = [
-                        const Center(
-                            child: Text(
-                                'Profile')), // To be implement by the developer who design this section
+                        const Profile(), // To be implement by the developer who design this section
                         const VisionMission(),
                         const ChairmanPrinicipal(),
                         const Faculty(),

@@ -35,7 +35,7 @@ class ProfileIdCard extends StatelessWidget {
             child: IconButton(
               onPressed: () {},
               icon: const Icon(
-                Icons.menu_open_rounded,
+                Icons.more_horiz,
                 size: 20,
               ),
             ),
