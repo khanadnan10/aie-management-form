@@ -43,7 +43,7 @@ class CustomStepper extends StatelessWidget {
                           color: AppColors.kPurple,
                         ),
                       ),
-                      child: index == currentIndex
+                      child: index < currentIndex
                           ? const Icon(
                               Icons.check,
                               size: 10,
@@ -98,7 +98,7 @@ class CustomStepper extends StatelessWidget {
                             color: AppColors.kPurple,
                           ),
                         ),
-                        child: index <= currentIndex
+                        child: index < currentIndex
                             ? const Icon(
                                 Icons.check,
                                 size: 10,
